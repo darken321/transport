@@ -1,4 +1,4 @@
-package ru.javawebinar.topjava;
+package by.transport;
 
 public class Main {
     public static void main(String[] args) {
