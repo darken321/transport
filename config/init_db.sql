@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS transport;
 -- Создание таблицы названия остановок уникальны
 CREATE TABLE stop
 (
-    id        SERIAL PRIMARY>>> KEY,
+    id        SERIAL PRIMARY KEY,
     -- уникальное UNIQUE значение названия остановок, при добавлении дубля будет ошибка
     stop_name VARCHAR(255) NOT NULL UNIQUE
 );
