@@ -1,4 +1,3 @@
-<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -18,10 +17,14 @@
 
         <tr>
             <td>
-                <%= request.getAttribute("transport_test")%>
+<%--                получение атрибута transport_test старым или новым синтаксисом --%>
+<%--                <%= request.getAttribute("transport_test")%>--%>
+                ${transport_test}
             </td>
             <td>
-                2222 text
+<%--                получение атрибута name, который передается из transportServlet через /transport?name=Dima--%>
+<%--                <%= request.getAttribute("name")%>--%>
+                Hello, ${name}!
             </td>
             <td>
                 3333 text
