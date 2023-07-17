@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>Transport timetable</name>
-    <url>http://topjava.herokuapp.com/</url>
+    <url>http://myapp.myserver.com/</url>
 
     <properties>
         <java.version>1.8</java.version>
@@ -34,7 +34,6 @@
     </build>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -52,6 +51,11 @@
             <artifactId>javax.servlet.jsp-api</artifactId>
             <version>2.3.3</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.5.4</version>
         </dependency>
 
     </dependencies>
